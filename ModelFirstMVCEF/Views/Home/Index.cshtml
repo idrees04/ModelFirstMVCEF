@@ -1,0 +1,68 @@
+﻿@model IEnumerable<ModelFirstMVCEF.Models.student>
+
+@{
+    ViewBag.Title = "Index";
+}
+    @*MODEL FIRST APPROACH
+Model First is great for when you're starting a new project where the database doesn't even exist yet.
+The model is stored in an EDMX file and can be viewed and edited in the Entity Framework Designer.
+In Model First, you define your model in an Entity Framework designer then generate SQL,
+ which will create database schema to match your model and then you execute the SQL to create the schema in your database.
+The classes that you interact with in your application are automatically generated from the EDMX file.
+
+    DDL (Data Definition Language)
+Data Definition Language (DDL) is a standard for commands that define the different structures in a database. DDL statements create, modify,
+ and remove database objects such as tables, indexes, and users. Common DDL statements are CREATE, ALTER, and DROP*@
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Class)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fees)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Class)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fees)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.StudentID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.StudentID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.StudentID })
+            </td>
+        </tr>
+    }
+
+</table>

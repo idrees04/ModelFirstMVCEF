@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelFirstMVCEF", "ModelFirstMVCEF\ModelFirstMVCEF.csproj", "{ADFCF0C0-9204-404C-9E04-CA4C1E4AFBED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADFCF0C0-9204-404C-9E04-CA4C1E4AFBED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADFCF0C0-9204-404C-9E04-CA4C1E4AFBED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADFCF0C0-9204-404C-9E04-CA4C1E4AFBED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADFCF0C0-9204-404C-9E04-CA4C1E4AFBED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8939AE42-52E5-4959-98B1-1E959517D88B}
+	EndGlobalSection
+EndGlobal
